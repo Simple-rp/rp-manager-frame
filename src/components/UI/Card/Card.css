@@ -1,0 +1,110 @@
+.card {
+  width: 300px;
+  background: #000000a1;
+  box-shadow: 4px 5px 1px 0px rgb(0 0 0 / 16%);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  height: 180px;
+  width: 100%;
+  text-align-last: center;
+}
+.card img {
+  height: 100%;
+  object-fit: cover;
+}
+.multiply {
+  mix-blend-mode: multiply;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-title {
+  color: #ebebeb;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card-price {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card-original-price {
+  margin-right: 10px;
+  text-decoration: line-through;
+}
+
+.card-description {
+  font-size: 14px;
+  min-height: 80px;
+  color: #bdbdbd;
+}
+
+.card-contact {
+  margin-bottom: 10px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+}
+.card-input {
+  border: unset;
+  background: unset;
+  border-bottom: 1px solid #ffffff66;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.card-input-sm {
+  border: unset;
+  background: unset;
+  border-bottom: 1px solid #ffffff66;
+  text-align: center;
+  width: 120px;
+}
+.card-input:focus-visible {
+  border: unset;
+}
+.card-input:focus {
+  border: unset;
+}
+
+.card-btn {
+  background-color: #c16000;
+  padding: 5px;
+  padding-inline: 10px;
+  border: unset;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 25px;
+}
+
+.card-btn:hover {
+  border: unset;
+  background: #e3751352;
+}
+button:disabled {
+  background: #4b3b2ec4 !important;
+  cursor: not-allowed !important;
+}
