@@ -9,11 +9,8 @@ export const clientApi = createApi({
   endpoints: (builder) => ({
     getClientDetails: builder.query<any, any>({
       query: () => `Entreprises!A1:J100${sheetApiParams}`,
-      transformResponse: (response: any, _, arg) => {
-        console.log(transformSheetResponse(response.values))
-        console.log(transformSheetResponse(response.values).find((e) => arg?.code === e.code))
-        return transformSheetResponse(response.values).find((e) => arg?.code === e.code)
-      },
+      transformResponse: (response: any, _, arg) =>
+        transformSheetResponse(response.values).find((e) => arg?.code === e.code),
     }),
   }),
 })
