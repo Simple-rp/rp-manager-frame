@@ -10,7 +10,7 @@ export const clientApi = createApi({
   baseQuery: sheetBaseQuery,
   endpoints: (builder) => ({
     getClientDetails: builder.query<any, any>({
-      query: ({ code }: any) => `${code}${range}${sheetApiParams}`,
+      query: ({ code }: any) => `Entreprises!A1:J100${sheetApiParams}`,
       transformResponse: (response: any, _, arg) => transformSheetResponse(response.values).find((e) => arg?.client === e.code),
     }),
   }),

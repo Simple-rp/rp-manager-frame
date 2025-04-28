@@ -3,7 +3,6 @@ import { useSearchParams } from 'react-router-dom'
 import './App.css'
 import Footer from './components/layout/Footer'
 import Header from './components/layout/Header'
-import ProductPage from './pages/Products/ProductPage'
 import Debug from './components/Debug/Debug'
 import { useGetClientDetailsQuery } from './service/client'
 
@@ -18,7 +17,6 @@ function App() {
     <>
       <Header code={clientDetails?.name} />
       <main>
-        <ProductPage code={code} client={clientDetails} />
         <Debug />
       </main>
       <Footer />
