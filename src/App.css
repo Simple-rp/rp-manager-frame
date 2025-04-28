@@ -33,9 +33,14 @@ footer {
 .header-side {
   align-content: center;
 }
+
 .debug {
   padding: 20px;
 }
+.debug p {
+  line-height: 5px;
+}
+
 .flex {
   display: flex;
 }
