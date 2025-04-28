@@ -42,3 +42,8 @@ footer {
 .invisible {
   visibility: hidden;
 }
+.message-error {
+  height: 100%;
+  align-content: center;
+  justify-self: center;
+}

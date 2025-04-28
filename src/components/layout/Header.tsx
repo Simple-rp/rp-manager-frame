@@ -1,12 +1,8 @@
-const Header = ({ code }: any) => {
+const Header = ({ logo, client }: any) => {
   return (
     <nav className="header">
-      <img
-        src="http://www.image-heberg.fr/files/17440716891022548264.png"
-        alt="logo gb"
-        width={150}
-      />
-      <div className="header-side">{code}</div>
+      <img src={logo} alt="logo entreprise" width={150} />
+      <div className="header-side">{client}</div>
     </nav>
   )
 }
